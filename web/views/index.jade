@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if user
+    p You are logged in as #{user.email}
+  #app
+  script(src="./js/app.js")

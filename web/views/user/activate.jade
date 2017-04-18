@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  div.hero-unit
+    h1 Success!
+    p Thank you for verifying your email address! You can now go back to the autohub app.
+    if iPhone
+      p
+        button.btn.btn-primary.btn-large(type="button", onclick="location.href = 'autohub://activated';")
+          span Open AutoHub
+      script.
+        document.location.href = 'autohub://activated';
